@@ -1,0 +1,84 @@
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  /* background-color: #1a1a1a; */
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+.divHome {
+width: 100%;
+background-color: #646cff;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: space-between;
+padding-top: 15px;
+}
+.homeDivs {
+  width: 355.2px;
+  height: 200px;
+  background-color: #f9f9f9;
+  margin: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.homeDivs2 {
+    width: 355.2px;
+    height: 200px;
+    background-color: #f9f9f9;
+    margin: 20px;
+}
+.logoHome {
+height: 36px;
+width: 139px;
+background-color: #646cff;
+margin: 60px;
+
+}
+@media only screen and (min-width:546px) {
+  .homeDivs {
+    width: 600px;
+    height: 338px;
+  }
+  .homeDivs2 {
+    background-color: #17181c;
+    height: 390px;
+    width:570px;
+    margin: 30px;
+  }
+  .divHome {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
