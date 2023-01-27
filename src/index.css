@@ -38,7 +38,6 @@ button:focus-visible {
 
 .divHome {
 width: 100%;
-background-color: #646cff;
 display: flex;
 flex-wrap: wrap;
 align-content: center;
@@ -52,33 +51,104 @@ padding-top: 15px;
   margin: 20px;
   margin-top: auto;
   margin-bottom: auto;
+  background-image: url("pablo.png");
+background-repeat: no-repeat;
+background-size: cover;
 }
 .homeDivs2 {
     width: 355.2px;
-    height: 200px;
-    background-color: #f9f9f9;
+    /* height: 200px; */
     margin: 20px;
+    padding: 10px;
 }
 .logoHome {
-height: 36px;
-width: 139px;
-background-color: #646cff;
+height: 25px;
+width: 159px;
 margin: 60px;
 
 }
+.unionLogo {
+height: 21px;
+width: 25px;
+margin-top: -7px;
+margin-right: 12px;
+}
+.lendLogo {
+  height: 25px;
+  width: 138;
+}
+.welcome {
+  width: 183px;
+  height: 55px;
+  /* font-family: 'Avenir Next'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  /* identical to box height */
+  letter-spacing: -0.04em;
+  color: #213F7D;
+  margin-top: -20px;
+}
+.pEnter {
+  width: 194px;
+height: 18px;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+color: #545F7D;
+  margin-top: -7px;
+}
+.inputDiv {
+  margin-top: 50px;
+}
+.input1 {
+   box-sizing: border-box;
+    /* position: absolute; */
+    width: 310px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.buttonHome {
+    box-sizing: border-box;
+    width: 310px;
+    height: 50px;
+    background: #39CDCC;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    color: white;
+        border: 2px solid rgba(84, 95, 125, 0.15);
+}
+
+
+
+
+
 @media only screen and (min-width:546px) {
   .homeDivs {
     width: 600px;
     height: 338px;
   }
   .homeDivs2 {
-    background-color: #17181c;
     height: 390px;
     width:570px;
     margin: 30px;
+    padding: 10px;
   }
   .divHome {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .input1 {
+    width: 447px; ;
+  }
+  .buttonHome {
+    width: 447px; ;
   }
 }
