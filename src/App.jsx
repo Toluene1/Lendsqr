@@ -4,7 +4,10 @@ import reactLogo from "./assets/react.svg";
 import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
 
   return (
     <section>
@@ -27,16 +30,21 @@ function App() {
               id=""
               placeholder="Email"
             />{" "}
-            <input
-              type="text"
-              className="input1"
-              name=""
-              id=""
-              placeholder="Password"
-            />
+            <div className="inputPass">
+              <input
+                type={passwordShown ? "text" : "password"}
+                className="input1"
+                name=""
+                id=""
+                placeholder="Password"
+              />
+              <span className="showPass" onClick={togglePassword}>
+                {passwordShown ? "HIDE" : "SHOW"}
+              </span>
+            </div>
           </div>
           <p className="pEnter">forgot password?</p>
-          <button className="buttonHome">login</button>
+          <button className="buttonHome">LOG IN</button>
         </div>
       </main>
     </section>
